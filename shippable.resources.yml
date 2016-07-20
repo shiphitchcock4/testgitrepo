@@ -13,6 +13,16 @@ resources:
       isPull: false
     seed:
       versionName: "latest" 
+     # branch: master
+     
+  - name: new-image3
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "library/nginx"
+      isPull: false
+    seed:
+      versionName: "latest" 
   
   - name: new-tag3
     type: image
