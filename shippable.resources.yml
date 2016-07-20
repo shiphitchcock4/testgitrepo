@@ -9,7 +9,7 @@ resources:
     type: image
     integration: ship4-docker
     pointer:
-      sourceName: "library/nginx"
+      sourceName: "shiphitchcock4/nginxsreya"
       isPull: false
     seed:
       versionName: "latest" 
