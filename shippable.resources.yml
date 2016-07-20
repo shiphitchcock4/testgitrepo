@@ -32,4 +32,3 @@ resources:
       sourceName: "defaultsreya" #name of the cluster we are deploying
       region: "us-west-2" 
  
- 
