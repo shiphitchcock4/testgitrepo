@@ -5,7 +5,7 @@ resources:
    # pointer:
     #  sourceName: shiphitchcock4/sample-script
      # branch: master
-  - name: new-image
+  - name: new-image1
     type: image
     integration: ship4-docker
     pointer:
