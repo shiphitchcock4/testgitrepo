@@ -2,7 +2,7 @@ triggers:
    - name: trigger-dv-man
      type: trigger
      version:
-       counter: 578
+       counter: 5787
       
   #- name: triggertest2
   #  type: trigger
