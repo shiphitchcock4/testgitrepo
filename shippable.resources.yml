@@ -14,7 +14,7 @@ resources:
     seed:
       versionName: "latest" 
   
-  - name: new-tag2
+  - name: new-tag3
     type: image
     integration: ship4-docker
     pointer:
