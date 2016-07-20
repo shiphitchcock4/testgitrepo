@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: trigger-dv-man
-      - IN: new-tag3
+      - IN: new-image1
       #  versionNumber: 1
       - TASK: managed
    # on_failure:
