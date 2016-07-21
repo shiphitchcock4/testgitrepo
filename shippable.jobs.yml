@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: trigger-dv-man
-      - IN: new-image1
+      - IN: new-tag3
       #  versionNumber: 1
       - TASK: managed
    # on_failure:
@@ -16,7 +16,7 @@ jobs:
       - IN: ecsfailmani92
       - IN: trigger-dv-man
       - IN: test-cluster1
-        versionNumber: 7
+      #  versionNumber: 7
       - TASK: managed
        # deployMethod: upgrade
     #on_failure:
