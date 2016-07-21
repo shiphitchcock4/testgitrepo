@@ -1,5 +1,5 @@
 jobs:
-  - name: ecsfailmani92
+  - name: ecsfailmani100
     type: manifest
     steps:
       - IN: trigger-dv-man
@@ -10,7 +10,7 @@ jobs:
       #- ./party.sh
     #  - ls
      # - pwd
-  - name : deployecs67
+  - name : deployecs101
     type: ecsDeploy
     steps:
       - IN: ecsfailmani92
