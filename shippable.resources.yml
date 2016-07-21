@@ -14,6 +14,15 @@ resources:
     seed:
       versionName: "latest" 
      # branch: master
+     
+  - name: new-image2
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "shiphitchcock4/hitchcock4_sample_node"
+      isPull: false
+    seed:
+      versionName: "latest" 
   
   - name: new-tag3
     type: image
@@ -31,4 +40,3 @@ resources:
     pointer:
       sourceName: "default" #name of the cluster we are deploying
       region: "us-west-2" 
- 
