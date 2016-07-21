@@ -10,10 +10,10 @@ jobs:
       #- ./party.sh
     #  - ls
      # - pwd
-  - name : deployecs103
+  - name : deployecs104
     type: ecsDeploy
     steps:
-      - IN: ecsfailmani92
+      - IN: ecsfailmani100
       - IN: trigger-dv-man
       - IN: test-cluster1
         versionNumber: 1
