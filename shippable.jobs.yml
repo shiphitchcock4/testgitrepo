@@ -4,7 +4,7 @@ jobs:
     steps:
       - IN: trigger-dv-man
       - IN: new-image1
-        versionNumber: 1
+      #  versionNumber: 1
       - TASK: managed
    # on_failure:
       #- ./party.sh
@@ -16,7 +16,7 @@ jobs:
       - IN: ecsfailmani100
       - IN: trigger-dv-man
       - IN: test-cluster1
-        versionNumber: 1
+     #   versionNumber: 1
       - TASK: managed
        # deployMethod: upgrade
     #on_failure:
