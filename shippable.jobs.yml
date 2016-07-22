@@ -1,23 +1,23 @@
 jobs:
-  - name: ecsfailmani100
-    type: manifest
-    steps:
-      - IN: trigger-dv-man
-      - IN: new-image1
+ # - name: ecsfailmani100
+  #  type: manifest
+   # steps:
+    #  - IN: trigger-dv-man
+     # - IN: new-image1
       #  versionNumber: 1
-      - TASK: managed
+    #  - TASK: managed
    # on_failure:
       #- ./party.sh
     #  - ls
      # - pwd
-  - name : deployecs112
-    type: ecsDeploy
-    steps:
-      - IN: ecsfailmani100
+  #- name : deployecs112
+   # type: ecsDeploy
+   # steps:
+    #  - IN: ecsfailmani100
     #  - IN: trigger-dv-man
-      - IN: test-cluster1
+     # - IN: test-cluster1
      #   versionNumber: 1
-      - TASK: managed
+     # - TASK: managed
        # deployMethod: upgrade
     #on_failure:
       #- ./party.sh
