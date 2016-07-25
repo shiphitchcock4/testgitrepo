@@ -4,7 +4,7 @@ resources:
     integration: shiphitchcock4-github
     pointer:
       sourceName: shiphitchcock4/samplePhp
-     # branch: master
+      branch: master
       
 #  - name: new-image1
  #   type: image
