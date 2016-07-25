@@ -1,19 +1,19 @@
 resources:
-  - name: sample-script1
+  - name: sampletestRepo
     type: gitRepo
     integration: shiphitchcock4-github
     pointer:
-      sourceName: shiphitchcock4/sampleRub
-      branch: master
+      sourceName: shiphitchcock4/samplePhp
+     # branch: master
       
-  - name: new-image1
-    type: image
-    integration: ship4-docker
-    pointer:
-      sourceName: "shiphitchcock4/hitchcock4_sample_node"
-      isPull: false
-    seed:
-      versionName: "latest" 
+#  - name: new-image1
+ #   type: image
+  #  integration: ship4-docker
+  #  pointer:
+   #   sourceName: "shiphitchcock4/hitchcock4_sample_node"
+    #  isPull: false
+  #  seed:
+   #   versionName: "latest" 
      # branch: master
      
  # - name: new-image2
@@ -25,19 +25,3 @@ resources:
     #seed:
      # versionName: "latest" 
   
-  - name: new-tag3
-    type: image
-    integration: ship4-docker
-    pointer:
-      sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
-      isPull: false
-    seed:
-      versionName: "latest"
-      #tag: latest
-      
-  - name: test-cluster1
-    type: cluster
-    integration: ship-awsnew
-    pointer:
-      sourceName: "default" #name of the cluster we are deploying
-      region: "us-west-2" 
