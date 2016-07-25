@@ -16,7 +16,7 @@ jobs:
    #   - IN: ecsfailmani100
     #  - IN: test-cluster1
      #   versionNumber: 1
-      - TASK: managed
+     # - TASK: managed
        # deployMethod: upgrade
     #on_failure:
       #- ./party.sh
