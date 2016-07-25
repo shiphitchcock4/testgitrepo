@@ -1,5 +1,5 @@
 jobs:
-  - name: ecsfailmani100
+  - name: testrepo
     type: manifest
     steps:
       - IN: trigger-dv
