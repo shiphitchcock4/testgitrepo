@@ -1,7 +1,7 @@
 resources:
   - name: sampletestRepo
     type: gitRepo
-    integration: shiphitchcock4-github
+    integration: github
     pointer:
       sourceName: shiphitchcock4/samplePhp
       branch: master
