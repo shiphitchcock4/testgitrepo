@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: trigger-dv
-      - IN: sampletestRepo
+      - IN: sampletestRepo1
       #  versionNumber: 1
       - TASK: managed
    # on_failure:
