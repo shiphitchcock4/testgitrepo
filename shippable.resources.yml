@@ -6,6 +6,10 @@ resources:
       sourceName: shiphitchcock4/samplePhp
       branch: master
       
+  - name: key-test
+    type: integration
+    integration: "keyValuePair-subint"
+      
 #  - name: new-image1
  #   type: image
   #  integration: ship4-docker
