@@ -8,7 +8,7 @@ resources:
       
   - name: key-test
     type: integration
-    integration: "keyValuePair-subint"
+    integration: "key-test"
       
 #  - name: new-image1
  #   type: image
