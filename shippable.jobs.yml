@@ -3,9 +3,24 @@ jobs:
     type: manifest
     steps:
       - IN: trigger-dv
+      - IN: key-test
       - IN: sampletestRepo1
       #  versionNumber: 1
-      - TASK: managed
+   #   - TASK: managed
+      - TASK:
+        - script: printenv 
+        - script: echo && echo && echo
+        - script: cat $NODEINTEGRATION_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $NODEINTEGRATION_PATH/integration.json
+        - script: echo && echo && echo
+        - script: cat $KEYVALUEPAIRINTEGRATION_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $KEYVALUEPAIRINTEGRATION_PATH/integration.json  
+        - script: echo && echo && echo
+        - script: cat $SLACKINTEGRATION_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $SLACKINTEGRATION_PATH/integration.json
    # on_failure:
       #- ./party.sh
     #  - ls
