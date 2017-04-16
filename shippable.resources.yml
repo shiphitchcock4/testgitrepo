@@ -7,7 +7,7 @@ resources:
       branch: master
       
       
-  - name: sample-publicproject2
+  - name: key-test
     type: integration
     integration: "key-test"
       
