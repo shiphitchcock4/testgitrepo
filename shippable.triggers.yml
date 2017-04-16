@@ -3,11 +3,11 @@ triggers:
      type: trigger
      version:
        counter: 71
-  #- name: triggertest2
-  #  type: trigger
-  #  source:
-   #   message: 'new teswt2'
-    #  counter: 1
+  - name: t111
+    type: trigger
+    source:
+    #  message: 'new teswt2'
+      counter: 1
       
   #- name: triggertest3
    # type: trigger
