@@ -1,4 +1,30 @@
 jobs:
+  - name: testdup1
+    type: runSh
+  #  serial: false
+    steps:
+    #  - IN: sample-script-31  #girepo reso name
+      - IN: image1
+      - IN: sample1
+     # - IN: sample-private1
+      - IN: t111
+      #- IN: script
+    #  - IN: sample-publicchangename
+     
+      #- IN: allpl-version
+      #  versionName: 28361828b3079fce434d84b1f8388aed167be15f
+      # versionNumber: 1
+     # - IN: foo-resource
+     # - IN: env
+     # - IN: rc1
+      - TASK:
+        # - script: ./IN/sample-publicproject2/gitRepo/echo.sh
+         - script: ./IN/sample1/gitRepo/echo.sh
+         - script: echo 'api'
+         - script: echo 'test'
+      
+         #- script: ./IN/script/gitRepo/echo.sh
+         - script: pwd
  
 
 
