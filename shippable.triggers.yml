@@ -5,7 +5,7 @@ triggers:
        counter: 71
    - name: t2
      type: trigger
-     source:
+     version:
     #  message: 'new teswt2'
        counter: 1
       
