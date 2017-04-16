@@ -3,7 +3,7 @@ triggers:
      type: trigger
      version:
        counter: 71
-   - name: t2
+   - name: gr1
      type: trigger
      version:
     #  message: 'new teswt2'
