@@ -7,7 +7,7 @@ resources:
       branch: master
       
       
-  - name: key-test
+  - name: sample1
     type: integration
     integration: "key-test"
       
