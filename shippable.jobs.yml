@@ -10,7 +10,7 @@ jobs:
          - script: echo 'test'
          - script: pwd
          
-  - name: testdup1
+  - name: testdup2
     type: manifest
     steps:
       - IN: new-image1
