@@ -7,7 +7,7 @@ resources:
       branch: master
       
       
-  - name: key-test
+  - name: pipeline_scriptRepo
     type: integration
     integration: "key-test"
       
