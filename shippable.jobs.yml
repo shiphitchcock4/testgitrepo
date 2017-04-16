@@ -1,5 +1,5 @@
 jobs:
-  - name: testdup1
+  - name: run1public1
     type: runSh
     steps:
       - IN: sample1
