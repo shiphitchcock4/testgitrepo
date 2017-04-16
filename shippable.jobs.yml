@@ -1,4 +1,10 @@
-
+jobs:
+  - name: test1
+    type: manifest
+    steps:
+      
+      - IN: key1t  
+      - IN: sample1
 
 
 
