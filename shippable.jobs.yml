@@ -4,7 +4,7 @@ jobs:
   #  serial: false
     steps:
     #  - IN: sample-script-31  #girepo reso name
-      - IN: image1
+     # - IN: image1
       - IN: sample1
      # - IN: sample-private1
       - IN: t111
