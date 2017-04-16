@@ -1,5 +1,5 @@
 jobs:
-  - name: testdup1
+  - name: runshscript
     type: runSh
     steps:
       - IN: sample1
