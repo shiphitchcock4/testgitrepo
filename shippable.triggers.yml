@@ -1,5 +1,5 @@
 triggers:
- #  - name: trigger-dv
+   - name: trigger-dv
      type: trigger
      version:
        counter: 71
