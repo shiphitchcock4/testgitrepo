@@ -6,7 +6,7 @@ resources:
       sourceName: shiphitchcock4/samplePhp
       branch: master
       
-  - name: key-test23
+  - name: key-test2334
     type: integration
     integration: "key-test"
       
