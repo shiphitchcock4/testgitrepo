@@ -6,6 +6,12 @@ resources:
       sourceName: shiphitchcock4/sample-script
       branch: master
       
+  - name: notusing
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphitchcock4/sample-script
+      branch: master    
       
   - name: pipeline_scriptRepo
     type: integration
