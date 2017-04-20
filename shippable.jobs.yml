@@ -7,8 +7,8 @@ jobs:
       - TASK:
          - script: ./IN/sample1/gitRepo/echo.sh
          - script: echo 'api'
-         - script: echo 'test'
-         - script: pwd
+         #- script: echo 'test'
+         #- script: pwd
          
   - name: testdup2
     type: manifest
