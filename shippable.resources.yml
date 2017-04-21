@@ -10,7 +10,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock4/sample-script
+      #sourceName: shiphitchcock4/sample-script
       branch: master
       
   - name: notusing
