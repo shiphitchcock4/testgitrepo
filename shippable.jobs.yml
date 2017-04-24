@@ -1,28 +1,28 @@
 jobs:
-  - name: runshscript
+  - name: testrun1
     type: runSh
     steps:
-      - IN: sample1
-      - IN: t111
+      - IN: testresogitrepo1
+      - IN: testtrigger1
       - TASK:
-         - script: ./IN/sample1/gitRepo/echo.sh
+         - script: ./IN/testresogitrepo1/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd
          
-  - name: testdup2
+  - name: testman1
     type: manifest
     steps:
-      - IN: new-image1
-      - IN: t111
+      - IN: testimage1
+      - IN: testtrigger1
      
-  - name: rungitrepotest
+  - name: testrun2
     type: runSh
     steps:
-      - IN: sampletestmaster
-      - IN: t111
+      - IN: testtrigger2
+      - IN: testresogitrepo2
       - TASK:
-         - script: ./IN/sampletestmaster/gitRepo/echo.sh
+         - script: ./IN/testresogitrepo2/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd     
