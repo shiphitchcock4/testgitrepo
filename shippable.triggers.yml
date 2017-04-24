@@ -1,9 +1,9 @@
 triggers:
-   - name: t111
+   - name: testtrigger1
      type: trigger
      version:
        counter: 711
-   - name: trigger1
+   - name: testtrigger2
      type: trigger
      version:
     #  message: 'new teswt2'
