@@ -2,10 +2,11 @@ jobs:
   - name: testrun1
     type: runSh
     steps:
-      - IN: -testreso gitrepo1
+    #  - IN: -testreso gitrepo1
+      - IN: testresogitrepo2
       - IN: testtrigger1
       - TASK:
-         - script: ./IN/testresogitrepo1/gitRepo/echo.sh
+         - script: ./IN/testresogitrepo2/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd
