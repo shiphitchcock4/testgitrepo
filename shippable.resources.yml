@@ -1,6 +1,6 @@
 resources:
   - name: testresogitrepo1
-    type: gitrepo
+    type: gitRepo
     integration: github
     pointer:
       sourceName: shiphitchcock4/sample-script
