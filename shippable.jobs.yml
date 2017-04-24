@@ -1,5 +1,5 @@
 jobs:
-  - name: -testrun1
+  - name: testrun1
     type: runSh
     steps:
       - IN: testresogitrepo1
