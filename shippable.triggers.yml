@@ -1,5 +1,5 @@
 triggers:
-   - name: testtrigger1
+  # - name: testtrigger1
      type: trigger
      version:
        counter: 711
