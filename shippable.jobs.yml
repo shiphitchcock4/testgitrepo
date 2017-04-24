@@ -5,6 +5,7 @@ jobs:
    
       - IN: testresogitrepo2
       - IN: testtrigger1
+      - testresogitrepo1
       - TASK:
          - script: ./IN/testresogitrepo2/gitRepo/echo.sh
          - script: echo 'api'
