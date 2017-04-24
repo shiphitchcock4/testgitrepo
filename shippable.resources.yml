@@ -29,7 +29,7 @@ resources:
   - name: testimage1
     type: image
     integration: ship4-docker
-    pointer:
+   # pointer:
       sourceName: "shiphitchcock4/hitchcock4_sample_node"
       isPull: false
     seed:
