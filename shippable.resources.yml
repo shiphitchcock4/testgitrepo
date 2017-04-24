@@ -1,32 +1,32 @@
 resources:
-  - name: sample1
+  - name: testresogitrepo1
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiphitchcock4/sample-script
       branch: master
   
-  - name: sampletestmaster
+  - name: testresogitrepo2
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiphitchcock4/sample-script
       branch: master
       
-  - name: notusing
+  - name: testgitrepo3
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiphitchcock4/sample-script
       branch: master    
       
-  - name: pipeline_scriptRepo
+  - name: testkey4
     type: integration
     integration: "key-test"
       
       
       
-  - name: new-image1
+  - name: testimage1
     type: image
     integration: ship4-docker
     pointer:
