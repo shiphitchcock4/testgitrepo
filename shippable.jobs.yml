@@ -15,8 +15,8 @@ jobs:
   - name: testman1
     type: manifest
     steps:
-      - IN: testimage1
-      - IN: testtrigger1
+     # - IN: testimage1
+      #- IN: testtrigger1
      
   - name: testrun2
     type: runSh
