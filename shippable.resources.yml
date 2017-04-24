@@ -30,10 +30,10 @@ resources:
     type: image
     integration: ship4-docker
    # pointer:
-      sourceName: "shiphitchcock4/hitchcock4_sample_node"
-      isPull: false
-    seed:
-      versionName: "latest" 
+    #  sourceName: "shiphitchcock4/hitchcock4_sample_node"
+    #  isPull: false
+    #seed:
+     # versionName: "latest" 
      # branch: master  
      
      
