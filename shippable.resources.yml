@@ -33,7 +33,7 @@ resources:
       sourceName: "shiphitchcock4/hitchcock4_sample_node"
       isPull: false
     seed:
-      versionName: "latest" 
+      versionName: "latestsreya" 
       branch: master  
      
      
