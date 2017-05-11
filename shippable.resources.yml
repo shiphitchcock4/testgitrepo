@@ -17,7 +17,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock4/sample-script
+      sourceName: shiphitchcock4/sample-script2
       branch: master    
       
   - name: pipeline_scriptRepo
