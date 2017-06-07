@@ -27,5 +27,4 @@ jobs:
          - script: ./IN/testresogitrepo2/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
-         #- script: pwd     
-
+     
