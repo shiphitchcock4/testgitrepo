@@ -20,7 +20,7 @@ jobs:
     type: runSh
     steps:
       - IN: sampletestmaster
-      - IN: t111
+      #- IN: t111
       - TASK:
          - script: ./IN/sampletestmaster/gitRepo/echo.sh
          - script: echo 'api'
