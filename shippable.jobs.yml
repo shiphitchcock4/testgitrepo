@@ -1,6 +1,7 @@
 jobs:
   - name: runshscript
     type: runSh
+    allowPublicAccess: true
     steps:
       - IN: sample1
       - IN: t111
@@ -17,7 +18,8 @@ jobs:
       - IN: t111
      
   - name: rungitrepotest
-    type: runSh
+    type: runCLI
+    allowPublicAccess: true
     steps:
       - IN: sampletestmaster
       #- IN: t111
