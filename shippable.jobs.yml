@@ -10,12 +10,14 @@ jobs:
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd
+    flags: www
          
   - name: testdup2
     type: manifest
     steps:
       - IN: new-image1
       - IN: t111
+    flags: weee
      
   - name: rungitrepotest
     type: runCLI
