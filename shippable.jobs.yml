@@ -30,4 +30,16 @@ jobs:
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd     
+     
+  - name: runpublictest
+    type: runCLI
+  #  allowPublicAccess: true
+    steps:
+      - IN: sampletestmaster
+      #- IN: t111
+      - TASK:
+         - script: ./IN/sampletestmaster/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: echo 'test'
+         #- script: pwd     
 
