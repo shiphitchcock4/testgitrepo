@@ -5,6 +5,7 @@ jobs:
     steps:
       - IN: sample1
       - IN: t111
+      - IN: yyyryt
       - TASK:
          - script: ./IN/sample1/gitRepo/echo.sh
          - script: echo 'api'
