@@ -7,7 +7,7 @@ jobs:
       - IN: testtrigger1
      
       - TASK:
-         - script: ./IN/testresogitrepo2sreya/gitRepo/echo.sh
+         - script: ./IN/testresogitrepo2/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd
