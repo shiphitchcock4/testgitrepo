@@ -11,7 +11,7 @@ jobs:
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd
-         
+    flags: fibranchrun1
   - name: testman1
     type: manifest
     steps:
