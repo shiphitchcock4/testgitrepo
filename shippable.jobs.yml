@@ -18,7 +18,7 @@ jobs:
       - IN: testimage1
       - IN: testtrigger1
      
-  - name: testrun6
+  - name: testrun7
     type: runSh
     steps:
       - IN: testtrigger2
