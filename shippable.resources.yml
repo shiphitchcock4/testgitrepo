@@ -20,9 +20,9 @@ resources:
       sourceName: shiphitchcock4/sample-script
       branch: master    
       
-  - name: testkey4
-    type: integration
-    integration: "key-test"
+ # - name: testkey4
+ #   type: integration
+ #   integration: "key-test"
       
       
       
