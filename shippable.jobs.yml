@@ -43,4 +43,25 @@ jobs:
          - script: ./IN/testresogitrepo2/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
-     
+         
+  - name: jobA
+    type: runSh
+    steps:
+      - OUT: testimage1
+      - IN: testtrigger2
+      - IN: testresogitrepo2
+      - TASK:
+         - script: ./IN/testresogitrepo2/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: echo 'test'
+         
+  - name: jobB
+    type: runSh
+    steps:
+      - IN: testimage1
+      - IN: testtrigger2
+      - IN: testresogitrepo2
+      - TASK:
+         - script: ./IN/testresogitrepo2/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: echo 'test'
