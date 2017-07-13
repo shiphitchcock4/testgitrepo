@@ -10,15 +10,15 @@ resources:
     type: integration
     integration: "key-test"
       
-#  - name: new-image1
- #   type: image
-  #  integration: ship4-docker
-  #  pointer:
-   #   sourceName: "shiphitchcock4/hitchcock4_sample_node"
-    #  isPull: false
-  #  seed:
-   #   versionName: "latest" 
-     # branch: master
+  - name: new-image123
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "shiphitchcock4/hitchcock4_sample_node"
+      isPull: false
+    seed:
+      versionName: "latest" 
+      branch: master
      
  # - name: new-image2
   #  type: image
