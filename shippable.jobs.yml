@@ -31,7 +31,24 @@ jobs:
     steps:
       - IN: testimage1
       - IN: testtrigger1
-     
+      
+  - name: mannotbuilt
+    type: manifest
+    steps:
+      - IN: testimage1
+     # - IN: testtrigger1
+      
+  - name: notbuilt
+    type: runSh
+    steps:
+      - IN: testruntrigger
+     # - IN: testrun1
+      - IN: mannotbuilt
+      - IN: testresogitrepo2
+      - TASK:
+         - script: ./IN/testresogitrepo2/gitRepo/echo.sh
+         - script: echo 'api' 
+         
   - name: testrun7
     type: runSh
     steps:
