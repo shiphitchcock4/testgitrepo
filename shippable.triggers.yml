@@ -2,7 +2,7 @@ triggers:
    - name: testtrigger1
      type: trigger
      version:
-       counter: 76
+       counter: 78
    - name: testtrigger2
      type: trigger
      version:
@@ -13,7 +13,7 @@ triggers:
      type: trigger
      version:
     #  message: 'new teswt2'
-       counter: 1   
+       counter: 2  
   #- name: triggertest3
    # type: trigger
   #  source:
