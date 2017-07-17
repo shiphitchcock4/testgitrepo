@@ -1,10 +1,10 @@
 resources:
-  - name: g1
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiphitchcock4/sample-script
-      branch: master
+  #- name: g1
+   # type: gitRepo
+   # integration: github
+   # pointer:
+    #  sourceName: shiphitchcock4/sample-script
+    #  branch: master
   
   - name: testresogitrepo2
     type: gitRepo
@@ -13,12 +13,12 @@ resources:
       sourceName: shiphitchcock4/sample-script
       branch: master
       
-  - name: g2
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiphitchcock4/sample-script
-      branch: master    
+#  - name: g2
+ #   type: gitRepo
+  #  integration: github
+  #  pointer:
+   #   sourceName: shiphitchcock4/sample-script
+    #  branch: master    
       
  # - name: testkey4
  #   type: integration
