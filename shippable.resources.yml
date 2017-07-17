@@ -1,5 +1,5 @@
 resources:
-  - name: testresogitrepo1
+  - name: g1
     type: gitRepo
     integration: github
     pointer:
@@ -13,7 +13,7 @@ resources:
       sourceName: shiphitchcock4/sample-script
       branch: master
       
-  - name: testgitrepo3
+  - name: g2
     type: gitRepo
     integration: github
     pointer:
