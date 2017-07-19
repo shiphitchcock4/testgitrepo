@@ -1,2 +1,58 @@
 jobs:
+  - name: runshscriptaccess
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: sampletestRepo1
+      #- IN: t111
+      #- IN: yyyryt
+      - TASK:
+         - script: ./IN/sampletestRepo1/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: echo 'test'
+         #- script: pwd
+    flags: www345
+         
+  - name: testdup2mani
+    type: manifest
+    steps:
+      - IN: new-image123
+     # - IN: t111
+    flags: weee345
+     
+  - name: runShitnoaccess
+    type: runSh
+ #   allowPublicAccess: true
+    steps:
+      - IN: sampletestRepo1
+      #- IN: t111
+      - TASK:
+         - script: ./IN/sampletestRepo1/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: echo 'test'
+         #- script: pwd     
+     
+  - name: runcliaccess
+    type: runCLI
+    allowPublicAccess: true
+    steps:
+      - IN: sampletestRepo1
+      #- IN: t111
+      - TASK:
+         - script: ./IN/sampletestRepo1/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: echo 'test'
+         #- script: pwd   
+         
+  - name: runcliaccess
+    type: runCLI
+    allowPublicAccess: true
+    steps:
+      - IN: sampletestRepo1
+      #- IN: t111
+      - TASK:
+         - script: ./IN/sampletestRepo1/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: echo 'test'
+         #- script: pwd     
 
