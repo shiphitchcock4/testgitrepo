@@ -34,7 +34,7 @@ jobs:
      
   - name: runcliaccess
     type: runCLI
-    allowPublicAccess: true
+   # allowPublicAccess: true
     steps:
       - IN: sampletestRepo1
       #- IN: t111
