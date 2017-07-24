@@ -59,7 +59,7 @@ jobs:
   - name: nodependecy
     type: runCLI
     allowPublicAccess: true
-    #steps:
+    steps:
      # - IN: sampletestRepo1
       #- IN: t111
       #- TASK:
