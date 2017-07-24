@@ -56,7 +56,7 @@ jobs:
          #- script: echo 'test'
          #- script: pwd     
 
-  - name: runcliaccess12345
+  - name: nodependecy
     type: runCLI
     allowPublicAccess: true
     #steps:
