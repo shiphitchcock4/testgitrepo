@@ -56,3 +56,14 @@ jobs:
          #- script: echo 'test'
          #- script: pwd     
 
+  - name: runcliaccess12345
+    type: runCLI
+    allowPublicAccess: true
+    #steps:
+     # - IN: sampletestRepo1
+      #- IN: t111
+      #- TASK:
+       #  - script: ./IN/sampletestRepo1/gitRepo/echo.sh
+        # - script: echo 'api'
+         #- script: echo 'test'
+         #- script: pwd     
