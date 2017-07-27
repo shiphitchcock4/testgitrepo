@@ -10,7 +10,7 @@ jobs:
          - script: ./IN/sampletestRepo1/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
-         - script: https://github.com/shiphitchcock4/sample-script
+        # - script: https://github.com/shiphitchcock4/sample-script
     flags: www3454
          
   - name: testdup2mani
