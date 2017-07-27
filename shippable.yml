@@ -17,7 +17,7 @@ build:
     - node --version
     - sudo docker images
     - echo $foo
-    #- sleep 5m
+    - sleep 5m
     - echo "https://github.com"
     - echo "http:github.com"
     - echo "https://google.com http://google.com google.com google,com"
