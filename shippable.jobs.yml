@@ -11,7 +11,7 @@ jobs:
          - script: echo 'api'
          #- script: echo 'test'
          - script: https://github.com/shiphitchcock4/sample-script
-    flags: www345
+    flags: www3454
          
   - name: testdup2mani
     type: manifest
