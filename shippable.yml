@@ -27,3 +27,6 @@ build:
     - echo -e "\033[31mred foreground\033[39m default foreground (foreground reset)"
     - echo -e "\033[41mred background\033[49m default background (background reset)"
     - echo -e "\033[41mhttps://google.com\033[49m https://google.com (background reset)"
+
+
+
