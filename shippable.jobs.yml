@@ -4,7 +4,7 @@ jobs:
     allowPublicAccess: true
     steps:
       - IN: sampletestRepo1
-      - IN: trigger_dv
+      - IN: trigger-dv
       #- IN: yyyryt
       - TASK:
          - script: ./IN/sampletestRepo1/gitRepo/echo.sh
