@@ -11,12 +11,14 @@ node_js:
   #- 5.0          
 env:
   global:
+    - secure: b7vbK4/ZaUdXLmcTWE+CL8jG9qq6lpf/MkDQINZKwFQVJDOE4+qLT8MmQo+vVXcc9Vm9YguPG/1eUhhajxpewoMVNFs69ywbuW3ZrFvM/lkTv6Xpn48u9FoRpML9MOjm7LUvrpFsrV2E9skcL1QxBuS5x0L9lGGCdvuKnh127F69nGVXuEUFQ3qGyxdi/g182utuEzNuYHAfHrAkkKFelyc/QtkDNYjou0qatg0rxnAXRhPlmnItOryIrEQhGD2KGzmcERjQ7khgPh844t+T6eUv7xk8YKIlG3JuDhovJoT4qF45bcWvNN4iecodGuXmhxnlHez3iu3Zz04QV+ga8A==
     - secure: V1BWMMqrjt5aDqmdWjEGTDMvVlxuE7yEv0/H9ret9W9OA5VMWm2dFOStHK9TMZrP5eN9GmzcfI86JEzDaU2mEKf6q6Nas5ZJU6nJxeq33Ph8g/YNManAIIM8pYh3KSOKsU5aJCmtPapI7iamegNnfJi1J3U+XYltgwrrkwGglY6hgf0YCOro0sbeHfzF7L+1LKPFVPAqdivYeeKZNoLUAbAeuEkaxqa6LKOg2VzYMBASM2EP8n1NANnHn8RFGBcvDSJkRdQIuQLEwU9FIV1s4ZON8eT49E0YNEevJe+R6wmybTcvW+8xtutxOktFEjs1ckmYvOUQD8jgAiNHERsbgw==
 build:     
   ci:          
     - node --version
     - sudo docker images
     - echo $foo
+    - echo $testsubs1
     #- sleep 5m
     - echo "https://github.com"
     - echo "http:github.com"
