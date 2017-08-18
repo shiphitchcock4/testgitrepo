@@ -19,6 +19,7 @@ build:
     - node --version
     - sudo docker images
     - echo $foo
+    - echo @p1
     - echo $testsubs1
     - echo $testpros
     #- sleep 5m
@@ -37,9 +38,6 @@ build:
   cache: true
   cache_dir_list: 
     - $SHIPPABLE_BUILD_DIR/shippable.yml
-
-
-
 
 
 
