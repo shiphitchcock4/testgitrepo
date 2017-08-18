@@ -29,4 +29,3 @@ build:
     image_name: drydock/u14all
     image_tag: master
     pull: true  
-
