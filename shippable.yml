@@ -24,7 +24,7 @@ build:
     - echo $testsubs1
     - echo $testpros
     - echo $chumma
-   # - sleep 1m
+    - sleep 5m
     - echo "https://github.com"
     - echo "http:github.com"
     - echo "https://google.com http://google.com google.com google,com"
