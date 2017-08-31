@@ -20,7 +20,7 @@ env:
 build:     
   ci:          
     - node --version
-    - THYU
+   
     - sudo docker images
     - echo $test
     - echo $testsubs1
