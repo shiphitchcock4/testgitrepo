@@ -6,9 +6,9 @@ resources:
       sourceName: shiphitchcock4/sample-script
       branch: master
       
-  - name: key-test2334
-    type: integration
-    integration: "key-test"
+ # - name: key-test2334
+  #  type: integration
+  #  integration: "key-test"
       
   - name: new-image123
     type: image
