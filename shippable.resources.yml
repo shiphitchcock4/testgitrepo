@@ -1,5 +1,5 @@
 resources:
-  - name: sampletestRepo1
+  - name: sampletestRepo1edit
     type: gitRepo
     integration: github
     pointer:
