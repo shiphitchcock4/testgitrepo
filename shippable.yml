@@ -11,6 +11,7 @@ node_js:
   #- 5.0          
 env:
   global:
+    - secure: T1vzJ15j/8CahXRGXegMxs1mBzgQIdl24jqeUvU+PbCDVmNzlIIsSfZg5hVNj8zCdex4j9DDOBigc0nIW6Vy19zrlfH/8QKQRIOw+5ir1Ejt19xs85TGfxO9dlP35sDUQo6JAj6xCgppFwbzckfZ/uLz1RwukFXBCidu4LhGwymuEmQLI0EyOwtzWxR64qr+3uwT6Czu//5llwPzrVUWdGLqLzt8RoIehHdhQbbqG+doexpOudKLcAJExoj69ci3wbJcoBVQV0868zQP0t1BYkMB0hHBGv0SdFObsBsKQ3AKjCZxOP5RlCJWodD5H4yYPNFCuptZ9OhTFRDZqHU3Cg==
     - secure: yuh7Fd9/ihoCR6rvVurwK1wnhnSmzNFDGJW9UpfZEzuUCG+Sn/QeFSYbSY1ZFao0uycy1LAdov+SkDXEdlIzCDuDw3f64XOECb/gbtBlXo4fsJImfeAFJO9pMBEQCaahOBBf4q5lQ/ZifZGec9UjcFtg772JHukgyf208c/DUGR3VdXMtG5wyzAoYva9VYvYmpAwmM1nNB24B4IHoEv+wfTvKNv+v8us+wb2ew7S4RmE2PD2asvo/mLqFryyeIxskzlE6NL22xmP8Q8N44cebrwoco8X51fMCxdUHrZ8UYsuCQ9q/hYFCIUNbuo46TSMurOTHd2Lz7ov74G+R8QOsA==
    # - secure: wM+UQpcjNE+sh7klbJZCOsCT+tCCrPBOpmAdx3fSwkV1eRNYstkEXxyOeEpA+PmLjXV7SfJsWHS1ad+ujsg/uGbart2yjZBegFFB7ovFAONUDjk53X2pa6KeNRJErpVKtG2IwY16vFR3f5tucEVn6He5Lar+ClIhQWh9sISdt6xY1wJttP+N409Hk+EwrYegH+5poJtjf9vFN+jHbEsA9CmpQ9UwFtS3anWZN7vtZ6KFiNiKtF+9AC+Yyor3cF/A+/zB6EylmwXDp+GZNQfFanfy/boZfOGEjbckI42ZvlQR50aA7E96cvas37oDA8lINYjy3oPMTeojY7QPRs5IaQ==
    # - secure: cMg2UgCCXYaytSAq+Iz8HoV3ReEmnFOahTnfMKouAwYdUMw2VjLSUYVy1yCmz8XC9/qyxLKnxYQN9k/+ztGJv5SAudRKLSAGszO0Hp8z9EpHGHBiWc5xOJu/rLgd2vs0TRzWnvV8uoAC2ys5wAMlIIPhfupt9PHSmBo52/0pEhN7nr11Lhy3XerfDhqY6J3WS3aSQTRXU1egoCooED507oEaZntROMLdX1UvWWQO1ZyV4sPNwpzAUp/CwBhPLwPgmJYHXi+tQ+U7u7DJVBFtd4HnVSZu5uq/SH/upX7i15lUOk/IyEmBrhVZkW04B6P4XPDqyPybZiNrSOarcAJtdQ==
@@ -27,8 +28,8 @@ build:
     - echo $testsubs1
     - echo $testpros
     - echo $chumma
-    - echo $one
-    - sleep 7m
+    - echo $eve
+    - sleep 1m
     - echo "https://github.com"
     - echo "http:github.com"
     - echo "https://google.com http://google.com google.com google,com"
