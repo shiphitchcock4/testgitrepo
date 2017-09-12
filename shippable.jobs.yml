@@ -41,7 +41,7 @@ jobs:
       - TASK:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
          - script: echo 'api'
-         #- script: echo 'test'
+         - script: echo 'test'
          #- script: pwd   
          
   - name: runcliaccess12345
