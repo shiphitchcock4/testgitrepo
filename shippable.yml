@@ -13,4 +13,4 @@ build:
   ci:          
     - node --version
     - echo $the
-    - sleep 5m
+    - sleep 6m
