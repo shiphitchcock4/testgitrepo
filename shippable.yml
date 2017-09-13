@@ -13,4 +13,5 @@ build:
   ci:          
     - node --version
     - echo $the
+    - echo $thispr1
    # - sleep 6m
