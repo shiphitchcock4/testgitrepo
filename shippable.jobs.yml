@@ -1,7 +1,7 @@
 jobs:
   - name: runshscriptaccess1331
     type: runSh
-    allowPublicAccess: fasle
+    allowPublicAccess: false
     steps:
       - IN: sampletestRepo1edit
       - IN: trigger-dv
@@ -15,6 +15,7 @@ jobs:
          
   - name: testdup2mani
     type: manifest
+    allowPublicAccess: true
     steps:
       - IN: new-image123
      # - IN: t111
