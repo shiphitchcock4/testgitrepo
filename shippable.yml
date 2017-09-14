@@ -30,7 +30,7 @@ build:
     - echo $testpros
     - echo $chumma
     - echo $eve
-    #- sleep 7m
+    - sleep 7m
     - echo "https://github.com"
     - echo "http:github.com"
     - echo "https://google.com http://google.com google.com google,com"
@@ -46,7 +46,5 @@ build:
   cache: true
   cache_dir_list: 
     - $SHIPPABLE_BUILD_DIR/shippable.yml
-    
-    
     
   
