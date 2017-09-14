@@ -1,7 +1,7 @@
 jobs:
   - name: runshscriptaccess1331
     type: runSh
-    allowPublicAccess: true
+    allowPublicAccess: fasle
     steps:
       - IN: sampletestRepo1edit
       - IN: trigger-dv
