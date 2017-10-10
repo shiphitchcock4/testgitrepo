@@ -13,11 +13,11 @@ jobs:
          - script: echo 'api'
          #- script: echo 'test'
         # - script: https://github.com/shiphitchcock4/sample-script
-         - script: echo "integration name------>-"$OLDSSHKEY_NAME
-         - script: echo "public key------>-"$OLDSSHKEY_INTEGRATION_PUBLICKEY
-         - script: echo "private key----->-"$OLDSSHKEY_INTEGRATION_PRIVATEKEY
-         - script: echo "public key path----->-"$OLDSSHKEY_PUBLIC_KEY_PATH
-         - script: echo "private key path------->-"$OLDSSHKEY_PRIVATE_KEY_PATH
+         - script: echo "integration name------>-"$NEWSSH_NAME
+         - script: echo "public key------>-"$NEWSSH_INTEGRATION_PUBLICKEY
+         - script: echo "private key----->-"$NEWSSH_INTEGRATION_PRIVATEKEY
+         - script: echo "public key path----->-"$NEWSSH_PUBLIC_KEY_PATH
+         - script: echo "private key path------->-"$NEWSSH_PRIVATE_KEY_PATH
 
     flags: www3454
          
