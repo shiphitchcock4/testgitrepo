@@ -5,12 +5,20 @@ jobs:
     steps:
       - IN: sampletestRepo1edit
       - IN: trigger-dv
+      - IN: newssh
+     
       #- IN: yyyryt
       - TASK:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
          - script: echo 'api'
          #- script: echo 'test'
         # - script: https://github.com/shiphitchcock4/sample-script
+         - script: echo "integration name------>-"$OLDSSHKEY_NAME
+         - script: echo "public key------>-"$OLDSSHKEY_INTEGRATION_PUBLICKEY
+         - script: echo "private key----->-"$OLDSSHKEY_INTEGRATION_PRIVATEKEY
+         - script: echo "public key path----->-"$OLDSSHKEY_PUBLIC_KEY_PATH
+         - script: echo "private key path------->-"$OLDSSHKEY_PRIVATE_KEY_PATH
+
     flags: www3454
          
   - name: testdup2mani
