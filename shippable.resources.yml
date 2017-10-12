@@ -23,6 +23,9 @@ resources:
   - name: newssh
     type: integration
     integration: newssh
+    
+  - name: state
+    type: state
      
  # - name: new-image2
   #  type: image
