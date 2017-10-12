@@ -53,6 +53,7 @@ jobs:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
          - script: echo 'api'
          - script: echo 'test'
+      - OUT: state
          #- script: pwd   
          
   - name: runcliaccess12345
