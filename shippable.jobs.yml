@@ -5,7 +5,7 @@ jobs:
     steps:
       - IN: sampletestRepo1edit
       - IN: trigger-dv
-      - IN: state
+     # - IN: state
       - IN: newssh
      
       #- IN: yyyryt
@@ -47,6 +47,7 @@ jobs:
    # allowPublicAccess: true
     steps:
       - IN: sampletestRepo1edit
+      - IN: state
       #- IN: t111
       - TASK:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
