@@ -30,7 +30,7 @@ build:
     - echo $testpros
     - echo $chumma
     - echo $eve
-   # - sleep 8m
+    - sleep 8m
     - echo "https://github.com"
     - echo "http:github.com"
     - echo "https://google.com http://google.com google.com google,com"
