@@ -47,7 +47,7 @@ jobs:
    # allowPublicAccess: true
     steps:
       - IN: sampletestRepo1edit
-      - IN: state
+    #  - IN: state
       #- IN: t111
       - TASK:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
