@@ -26,7 +26,13 @@ resources:
     
   - name: state
     type: state
-     
+    
+  - name: emailtestordersort1235676
+    type: notification
+    pointer:
+      method: email
+    #  recipients:
+     #   -  "sreya@shippable.com"
  # - name: new-image2
   #  type: image
    # integration: ship4-docker
