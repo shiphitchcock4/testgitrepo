@@ -50,8 +50,8 @@ build:
 integrations:    
   notifications:
 
-    #- integrationName: emailtestordersort1235676     
-    - integrationName: test  
+    - integrationName: emailtestordersort1235676     
+    #- integrationName: test    
       type: email   
       on_start: always
       on_success: always 
