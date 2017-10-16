@@ -40,10 +40,28 @@ jobs:
          
   - name: testdup2mani
     type: manifest
+    on_start:
+      - NOTIFY: newemail
     allowPublicAccess: true
     steps:
       - IN: new-image123
      # - IN: t111
+     
+    on_success:      
+      - script: echo 'test in on_success'
+      - script: ls
+      - script: echo 'it is success'
+      - NOTIFY: newemail
+ 
+    on_failure:
+      - script: echo 'testing1 failure'      
+      - script: pwd
+      - script: echo 'OOPS on_failure :('
+      - NOTIFY: newemail
+    
+    on_cancel:
+      - script: echo "This works on_always"
+      - NOTIFY: newemail
     flags: weee345
      
   - name: runShitnoaccess
