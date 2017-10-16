@@ -5,7 +5,7 @@ jobs:
     steps:
       - IN: sampletestRepo1edit
       - IN: trigger-dv
-      - IN: emailtestordersort1235676
+     # - IN: emailtestordersort1235676
      # - IN: state
       - IN: newssh
      
@@ -20,7 +20,21 @@ jobs:
          - script: echo "private key----->-"$NEWSSH_INTEGRATION_PRIVATEKEY
          - script: echo "public key path----->-"$NEWSSH_PUBLIC_KEY_PATH
          - script: echo "private key path------->-"$NEWSSH_PRIVATE_KEY_PATH
-
+     on_success:      
+      - script: echo 'test in on_success'
+      - script: ls
+      - script: echo 'it is success'
+      - NOTIFY: emailtestordersort1235676
+ 
+    on_failure:
+      - script: echo 'testing1 failure'      
+      - script: pwd
+      - script: echo 'OOPS on_failure :('
+      - NOTIFY: emailtestordersort1235676
+    
+    on_cancel:
+      - script: echo "This works on_always"
+      - NOTIFY: emailtestordersort1235676
     flags: www3454
          
   - name: testdup2mani
