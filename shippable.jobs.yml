@@ -3,6 +3,7 @@ jobs:
     type: runSh
     on_start:
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
     allowPublicAccess: false
     steps:
       - IN: sampletestRepo1edit
@@ -26,22 +27,26 @@ jobs:
       - script: ls
       - script: echo 'it is success'
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
  
     on_failure:
       - script: echo 'testing1 failure'      
       - script: pwd
       - script: echo 'OOPS on_failure :('
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
     
     on_cancel:
       - script: echo "This works on_always"
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
     flags: www3454
          
   - name: testdup2mani
     type: manifest
     on_start:
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
     allowPublicAccess: true
     steps:
       - IN: new-image123
@@ -52,16 +57,19 @@ jobs:
       - script: ls
       - script: echo 'it is success'
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
  
     on_failure:
       - script: echo 'testing1 failure'      
       - script: pwd
       - script: echo 'OOPS on_failure :('
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
     
     on_cancel:
       - script: echo "This works on_always"
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
     flags: weee345
      
   - name: runShitnoaccess
@@ -119,6 +127,7 @@ jobs:
     on_start:
     
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
     
     steps:      
       - IN: testdup2mani
@@ -130,7 +139,8 @@ jobs:
     on_success:         
    
       - NOTIFY: newemail
-            
+      - NOTIFY: emailtestordersort1235676     
     on_failure:
       - NOTIFY: newemail
+      - NOTIFY: emailtestordersort1235676
      
