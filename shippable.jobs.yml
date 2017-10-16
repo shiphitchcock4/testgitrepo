@@ -5,10 +5,8 @@ jobs:
     steps:
       - IN: sampletestRepo1edit
       - IN: trigger-dv
-     # - IN: emailtestordersort1235676
      # - IN: state
       - IN: newssh
-     
       #- IN: yyyryt
       - TASK:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
