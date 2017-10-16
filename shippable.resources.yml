@@ -31,8 +31,8 @@ resources:
     type: notification
     pointer:
       method: email
-    #  recipients:
-     #   -  "sreya@shippable.com"
+      recipients:
+        -  "sreya@shippable.com"
  # - name: new-image2
   #  type: image
    # integration: ship4-docker
