@@ -33,6 +33,14 @@ resources:
       method: email
       recipients:
         -  "sreya@shippable.com"
+        
+  - name: ddc_cluster
+    type: cluster
+    integration: ship-ddc
+    pointer:
+      sourceName : "nothing"
+    flags: ddc_cluster
+    
  # - name: new-image2
   #  type: image
    # integration: ship4-docker
