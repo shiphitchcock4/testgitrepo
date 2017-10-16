@@ -2,7 +2,7 @@ jobs:
   - name: runshscriptaccess1331
     type: runSh
     on_start:
-      - NOTIFY: emailtestordersort1235676
+      - NOTIFY: newemail
     allowPublicAccess: false
     steps:
       - IN: sampletestRepo1edit
