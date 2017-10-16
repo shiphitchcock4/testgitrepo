@@ -47,6 +47,13 @@ build:
   cache_dir_list: 
     - $SHIPPABLE_BUILD_DIR/shippable.yml
 
+integrations:    
+  notifications:
 
+    - integrationName: email         
+      type: email        
+      #recipients:  
+      #  - shiptest.rc.ow@gmail.com
+      #  - shiptest.rc.me@gmail.com
 
 
