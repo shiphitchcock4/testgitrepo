@@ -46,7 +46,7 @@ resources:
     pointer:
       method: email
       recipients:
-        -  "shiphitchcock4@shippable.com"
+        -  "shiphitchcock4@gmail.com"
     
  # - name: new-image2
   #  type: image
