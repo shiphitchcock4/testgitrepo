@@ -55,7 +55,7 @@ integrations:
       type: email   
       on_start: always
       on_success: always
-      on_cancel: always
+   #   on_cancel: always
       on_failure: always
       recipients:  
         - shiphitchcock4@gmail.com
