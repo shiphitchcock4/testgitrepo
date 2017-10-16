@@ -50,7 +50,8 @@ build:
 integrations:    
   notifications:
 
-    - integrationName: emailtestordersort1235676     
+    #- integrationName: emailtestordersort1235676     
+    - integrationName: test  
       type: email   
       on_start: always
       on_success: always 
@@ -58,5 +59,7 @@ integrations:
    #   recipients:  
     #    - shiphitchcock4@gmail.com
       #  - shiptest.rc.me@gmail.com
+
+
 
 
