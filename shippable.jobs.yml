@@ -1,6 +1,8 @@
 jobs:
   - name: runshscriptaccess1331
     type: runSh
+    on_start:
+      - NOTIFY: emailtestordersort1235676
     allowPublicAccess: false
     steps:
       - IN: sampletestRepo1edit
@@ -18,6 +20,7 @@ jobs:
          - script: echo "private key----->-"$NEWSSH_INTEGRATION_PRIVATEKEY
          - script: echo "public key path----->-"$NEWSSH_PUBLIC_KEY_PATH
          - script: echo "private key path------->-"$NEWSSH_PRIVATE_KEY_PATH
+    
     on_success:      
       - script: echo 'test in on_success'
       - script: ls
@@ -91,4 +94,25 @@ jobs:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
         # - script: echo 'api'
          #- script: echo 'test'
-         #- script: pwd     
+         #- script: pwd    
+         
+  - name: deploy_ddc
+    type: deploy    
+    on_start:
+    
+      - NOTIFY: emailtestordersort1235676
+    
+    steps:      
+      - IN: testdup2mani
+      - IN: ddc_cluster
+     # - IN: ddc_dopts
+      #- IN: t2runsh
+      - TASK: managed
+    flags: deploy_ddc
+    on_success:         
+   
+      - NOTIFY: emailtestordersort1235676
+            
+    on_failure:
+      - NOTIFY: emailtestordersort1235676
+     
