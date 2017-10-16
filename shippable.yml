@@ -23,7 +23,7 @@ env:
 build:     
   ci:          
     - node --version
-    #- thyui
+    - thyui
     - sudo docker images
     - echo $test
     - echo $testsubs1
