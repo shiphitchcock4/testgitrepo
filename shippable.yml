@@ -23,10 +23,10 @@ env:
 build:     
   ci:          
     - node --version
-   # - thyui
+    - thyui
     - sudo docker images
     - echo $test
-    -echo $testsubs1
+    - echo $testsubs1
     - echo $testpros
     - echo $chumma
     - echo $eve
