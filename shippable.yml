@@ -55,8 +55,8 @@ integrations:
       on_start: always
       on_success: always 
       on_failure: always
-      #recipients:  
-      #  - shiptest.rc.ow@gmail.com
+      recipients:  
+        - sreyaj10@gmail.com
       #  - shiptest.rc.me@gmail.com
 
 
