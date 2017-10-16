@@ -40,6 +40,13 @@ resources:
     pointer:
       sourceName : "nothing"
     flags: ddc_cluster
+  
+  - name: newemail
+    type: notification
+    pointer:
+      method: email
+      recipients:
+        -  "shiphitchcock4@shippable.com"
     
  # - name: new-image2
   #  type: image
