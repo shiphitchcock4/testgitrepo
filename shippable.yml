@@ -15,3 +15,17 @@ build:
     - echo $the123
   #  - echo $thispr1123
    # - sleep 6m
+integrations:    
+  notifications:
+
+    - integrationName: email   
+    #- integrationName: test    
+      type: email   
+      on_start: always
+      on_success: always
+      on_cancel: never
+      on_failure: always
+      on_pull_request: always
+      recipients:  
+        - shiphitchcock4@gmail.com
+        - sreyaj10@gmail.com
