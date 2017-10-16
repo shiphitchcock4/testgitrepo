@@ -25,17 +25,17 @@ jobs:
       - script: echo 'test in on_success'
       - script: ls
       - script: echo 'it is success'
-      - NOTIFY: emailtestordersort1235676
+      - NOTIFY: newemail
  
     on_failure:
       - script: echo 'testing1 failure'      
       - script: pwd
       - script: echo 'OOPS on_failure :('
-      - NOTIFY: emailtestordersort1235676
+      - NOTIFY: newemail
     
     on_cancel:
       - script: echo "This works on_always"
-      - NOTIFY: emailtestordersort1235676
+      - NOTIFY: newemail
     flags: www3454
          
   - name: testdup2mani
@@ -100,7 +100,7 @@ jobs:
     type: deploy    
     on_start:
     
-      - NOTIFY: emailtestordersort1235676
+      - NOTIFY: newemail
     
     steps:      
       - IN: testdup2mani
@@ -111,8 +111,8 @@ jobs:
     flags: deploy_ddc
     on_success:         
    
-      - NOTIFY: emailtestordersort1235676
+      - NOTIFY: newemail
             
     on_failure:
-      - NOTIFY: emailtestordersort1235676
+      - NOTIFY: newemail
      
