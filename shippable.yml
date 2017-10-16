@@ -26,7 +26,7 @@ build:
    # - thyui
     - sudo docker images
     - echo $test
-    - echo $testsubs1
+    -echo $testsubs1
     - echo $testpros
     - echo $chumma
     - echo $eve
@@ -56,8 +56,8 @@ integrations:
       on_start: always
       on_success: always 
       on_failure: always
-   #   recipients:  
-    #    - shiphitchcock4@gmail.com
+      recipients:  
+        - shiphitchcock4@gmail.com
       #  - shiptest.rc.me@gmail.com
 
 
