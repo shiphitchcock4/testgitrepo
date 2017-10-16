@@ -53,7 +53,7 @@ integrations:
     - integrationName: emailtestordersort1235676     
       type: email   
       recipients:  
-        - sreyaj10@gmail.com
+        - shiphitchcock4@gmail.com
       on_start: always
       on_success: always 
       on_failure: always
