@@ -23,7 +23,7 @@ env:
 build:     
   ci:          
     - node --version
-    - thyui
+   # - thyui
     - sudo docker images
     - echo $test
     - echo $testsubs1
@@ -51,7 +51,7 @@ integrations:
   notifications:
 
     - integrationName: notify-hipchat
-      type: hipchatKey
+      type: hipchat
       recipients: 
         - '#rc-private'
         - '#rc-public'
