@@ -29,3 +29,18 @@ integrations:
       recipients:  
         - shiphitchcock4@gmail.com
         - sreyaj10@gmail.com
+   
+  
+
+    - integrationName: notify-hipchat
+      type: hipchat
+      recipients: 
+        - '#rc-private'
+        - '#rc-public'
+        - '@shiptestrcow'
+      on_start: always
+      on_success: always   
+      on_failure: always
+      on_cancel: always
+      
+      
