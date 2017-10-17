@@ -4,6 +4,7 @@ jobs:
     on_start:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
     allowPublicAccess: false
     steps:
       - IN: sampletestRepo1edit
@@ -28,6 +29,7 @@ jobs:
       - script: echo 'it is success'
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
  
     on_failure:
       - script: echo 'testing1 failure'      
@@ -35,11 +37,13 @@ jobs:
       - script: echo 'OOPS on_failure :('
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
     
     on_cancel:
       - script: echo "This works on_always"
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
     flags: www3454
          
   - name: testdup2mani
@@ -47,6 +51,7 @@ jobs:
     on_start:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
     allowPublicAccess: true
     steps:
       - IN: new-image123
@@ -58,6 +63,7 @@ jobs:
       - script: echo 'it is success'
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
  
     on_failure:
       - script: echo 'testing1 failure'      
@@ -65,11 +71,12 @@ jobs:
       - script: echo 'OOPS on_failure :('
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
-    
+      - NOTIFY: notify-hipchat
     on_cancel:
       - script: echo "This works on_always"
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
     flags: weee345
      
   - name: runShitnoaccess
@@ -83,7 +90,12 @@ jobs:
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd     
-     
+    always:
+      - script: echo "This works on_always"
+      #- NOTIFY: notify-slack
+      - NOTIFY: newemail
+      - NOTIFY: notify-hipchat
+    #  - NOTIFY: notify-irc
   - name: runcliaccess
     type: runCLI
    # allowPublicAccess: true
@@ -122,12 +134,15 @@ jobs:
          #- script: echo 'test'
          #- script: pwd    
          
+         
+         
   - name: deploy_ddc
     type: deploy    
     on_start:
     
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
     
     steps:      
       - IN: testdup2mani
@@ -139,8 +154,10 @@ jobs:
     on_success:         
    
       - NOTIFY: newemail
-      - NOTIFY: emailtestordersort1235676     
+      - NOTIFY: emailtestordersort1235676 
+      - NOTIFY: notify-hipchat
     on_failure:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
+      - NOTIFY: notify-hipchat
      
