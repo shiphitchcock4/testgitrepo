@@ -58,6 +58,9 @@ resources:
         - "@shiptestrcow"
     flags: hipchat  
     
+  - name: my_hipchat_key
+    type: integration
+    integration: notify-hipchat ###your hipchat  integration name
  # - name: new-image2
   #  type: image
    # integration: ship4-docker
