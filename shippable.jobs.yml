@@ -11,8 +11,8 @@ jobs:
       - IN: trigger-dv
      # - IN: state
       - IN: newssh
-      
       - IN: notify-hipchat
+      
       #- IN: yyyryt
       - TASK:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
