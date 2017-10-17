@@ -23,7 +23,7 @@ env:
 build:     
   ci:          
     - node --version
-    - thyui
+   # - thyui
     - sudo docker images
     - echo $test
     - echo $testsubs1
@@ -50,16 +50,15 @@ build:
 integrations:    
   notifications:
 
-    - integrationName: email   
-    #- integrationName: test    
-      type: email   
+    - integrationName: notify-hipchat
+      type: hipchat
+      recipients: 
+        - '#rc-private'
+        - '#rc-public'
+        - '@shiptestrcow'
       on_start: always
-      on_success: always
-      on_cancel: never
+      on_success: always   
       on_failure: always
-      recipients:  
-        - shiphitchcock4@gmail.com
-        - sreyaj10@gmail.com
-      #  - shiptest.rc.me@gmail.com
+      on_cancel: always
 
 
