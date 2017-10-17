@@ -42,13 +42,13 @@ resources:
       sourceName : "nothing"
     flags: ddc_cluster
     
- - name: newemailtest
-   type: notification
-   pointer:
-     method: email
-     recipients:
-       -  "shiphitchcock4@gmail.com"
-   flags: emailorpahn
+  - name: newemailtest
+    type: notification
+    pointer:
+      method: email
+      recipients:
+        -  "shiphitchcock4@gmail.com"
+    flags: emailorpahn
   
   - name: newemail
     type: notification
