@@ -58,7 +58,7 @@ integrations:
         - '@shiptestrcow'
       on_start: always
       on_success: always   
-      on_failure: on_change
+      on_failure: change
       on_cancel: always
 
    
