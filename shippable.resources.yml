@@ -48,7 +48,7 @@ resources:
       recipients:
         -  "shiphitchcock4@gmail.com"
         
- - name: notify-hipchat
+  - name: notify-hipchat
     type: notification
     integration: "notify-hipchat"
     pointer:
