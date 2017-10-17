@@ -51,7 +51,7 @@ integrations:
   notifications:
 
     - integrationName: notify-hipchat
-      type: test
+      type: hipchatKey
       recipients: 
         - '#rc-private'
         - '#rc-public'
