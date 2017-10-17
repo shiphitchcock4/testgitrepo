@@ -5,7 +5,7 @@ jobs:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
       - NOTIFY: notify-hipchat
-    allowPublicAccess: false
+    allowPublicAccess: true
     steps:
       - IN: sampletestRepo1edit
       - IN: trigger-dv
