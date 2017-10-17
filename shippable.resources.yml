@@ -70,6 +70,9 @@ resources:
   - name: my_hipchat_key
     type: integration
     integration: notify-hipchat ###your hipchat  integration name
+    flags: testhipchatint
+    
+  
  # - name: new-image2
   #  type: image
    # integration: ship4-docker
