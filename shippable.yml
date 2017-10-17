@@ -23,7 +23,7 @@ env:
 build:     
   ci:          
     - node --version
- #   - thyui
+    - thyui
     - sudo docker images
     - echo $test
     - echo $testsubs1
@@ -50,7 +50,7 @@ build:
 integrations:    
   notifications:
 
-    - integrationName: email   
+    - integrationName: emailtestordersort1235676  
     #- integrationName: test    
       type: email   
       on_start: always
