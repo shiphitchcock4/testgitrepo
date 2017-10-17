@@ -15,6 +15,7 @@ jobs:
       - TASK:
          - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
          - script: echo 'api'
+         - script: echo 'printenv'
          #- script: echo 'test'
         # - script: https://github.com/shiphitchcock4/sample-script
          - script: echo "integration name------>-"$NEWSSH_NAME
