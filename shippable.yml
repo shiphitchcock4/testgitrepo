@@ -30,7 +30,17 @@ integrations:
         - shiphitchcock4@gmail.com
         - sreyaj10@gmail.com
    
-  
+    - integrationName: newhipchat
+      type: hipchat
+      recipients: 
+        - '#ship4room'
+        - '#privateroom'
+        - '@shiphitchcock4'
+      on_start: always
+      on_success: always 
+      on_pull_request: always
+      
+    #  on_cancel: always
 
     - integrationName: notify-hipchat
       type: hipchat
