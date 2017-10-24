@@ -50,12 +50,12 @@ build:
 integrations:    
   notifications:
 
-    - integrationName: notify-hipchat
+    - integrationName: newhipchat
       type: hipchat
       recipients: 
-        - '#rc-private'
-        - '#rc-public'
-        - '@shiptestrcow'
+        - '#ship4room'
+        - '#privateroom'
+        - '@shiphitchcock4'
       on_start: always
       on_success: always   
       on_failure: change
