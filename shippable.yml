@@ -50,7 +50,7 @@ build:
 integrations:    
   notifications:
 
-    - integrationName: newhipchat
+    - integrationName: newhipchat1
       type: hipchatKey
       recipients: 
         - '#ship4room'
