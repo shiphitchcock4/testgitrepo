@@ -23,14 +23,14 @@ env:
 build:     
   ci:          
     - node --version
-    - thyui
+    #- thyui
     - sudo docker images
     - echo $test
     - echo $testsubs1
     - echo $testpros
     - echo $chumma
     - echo $eve
-    #- sleep 8m
+    - sleep 8m
     - echo "https://github.com"
     - echo "http:github.com"
     - echo "https://google.com http://google.com google.com google,com"
@@ -60,6 +60,11 @@ integrations:
       on_success: always   
       on_failure: never
       on_cancel: always
+
+
+
+
+
 
 
 
