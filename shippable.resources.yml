@@ -82,6 +82,10 @@ resources:
         - "@shiphitchcock4
     flags: hipchatnew
   
+  
+  
+  
+  
  # - name: new-image2
   #  type: image
    # integration: ship4-docker
