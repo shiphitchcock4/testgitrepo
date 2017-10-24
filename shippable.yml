@@ -51,7 +51,7 @@ integrations:
   notifications:
 
     - integrationName: newhipchat
-      type: hipchat
+      type: hipchatKey
       recipients: 
         - '#ship4room'
         - '#privateroom'
