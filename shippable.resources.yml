@@ -72,6 +72,10 @@ resources:
     integration: notify-hipchat ###your hipchat  integration name
     flags: testhipchatint
     
+  - name: hipchatnew
+    type: integration
+    integration: hipchatnew1 ###your hipchat  integration name
+    flags: hipchatnew
   
  # - name: new-image2
   #  type: image
