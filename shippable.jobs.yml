@@ -91,7 +91,7 @@ jobs:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
       - NOTIFY: notify-hipchat
-      - NOTIFY: hipchatnew
+    #  - NOTIFY: hipchatnew
     flags: weee345
      
   - name: runShitnoaccess
