@@ -75,6 +75,11 @@ resources:
   - name: hipchatnew
     type: integration
     integration: newhipchat1 ###your hipchat  integration name
+    pointer:
+      recipients:
+        - "#ship4room" 
+        - "#privateroom"
+        - "@shiphitchcock4
     flags: hipchatnew
   
  # - name: new-image2
