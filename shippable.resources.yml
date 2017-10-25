@@ -42,6 +42,12 @@ resources:
       sourceName : "nothing"
     flags: ddc_cluster
     
+  - name: ddc_dopts
+    type: dockerOptions
+    version:
+      memory: 128
+    flags: ddc_options 
+    
   - name: newemailtest
     type: notification
     pointer:
