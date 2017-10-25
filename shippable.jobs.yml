@@ -161,6 +161,7 @@ jobs:
       - NOTIFY: hipchatnew
     steps:      
       - IN: testdup2mani
+      - IN: ddc_dopts
       - IN: ddc_cluster
      # - IN: ddc_dopts
       #- IN: t2runsh
