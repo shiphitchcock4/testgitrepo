@@ -59,7 +59,7 @@ jobs:
          
   - name: testdup2mani
     type: manifest
-    versionNumber: 789
+    versionNumber: 78989902838
     on_start:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
