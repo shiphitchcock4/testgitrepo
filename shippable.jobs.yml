@@ -59,7 +59,7 @@ jobs:
          
   - name: testdup2mani
     type: manifest
-    versionNumber: 78989902838
+    
     on_start:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
@@ -68,7 +68,7 @@ jobs:
     allowPublicAccess: true
     steps:
       - IN: new-image123
-      
+        versionNumber: 78989902838
      # - IN: t111
      
     on_success:      
