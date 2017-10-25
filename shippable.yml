@@ -64,7 +64,7 @@ integrations:
       type: hipchatKey
       recipients: 
         - '#rc-public'
-        - '#rc-privtae'
+        - '#rc-private'
         - '@shiptest.rc.ow'
       on_start: always
       on_success: always   
