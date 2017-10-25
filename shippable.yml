@@ -50,7 +50,7 @@ build:
 integrations:    
   notifications:
 
-    - integrationName: notify-hipchat
+    - integrationName: ship-hipchat123
       type: hipchat
       recipients: 
         - '#rc-private'
