@@ -68,7 +68,7 @@ jobs:
     allowPublicAccess: true
     steps:
       - IN: new-image123
-        versionNumber: 012345678901234567890
+    #    versionNumber: 012345678901234567890
      # - IN: t111
      
     on_success:      
