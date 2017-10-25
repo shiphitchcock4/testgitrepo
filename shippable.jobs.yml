@@ -59,6 +59,7 @@ jobs:
          
   - name: testdup2mani
     type: manifest
+    versionNumber: 789
     on_start:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
@@ -67,12 +68,13 @@ jobs:
     allowPublicAccess: true
     steps:
       - IN: new-image123
+      
      # - IN: t111
      
     on_success:      
       - script: echo 'test in on_success'
       - script: ls
-      - script: lkoo
+
       - script: echo 'it is success'
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
