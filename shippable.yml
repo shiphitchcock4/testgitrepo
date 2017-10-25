@@ -59,6 +59,16 @@ integrations:
       on_start: always
       on_success: always   
       on_failure: never
+      
+    - integrationName: newhipchat2
+      type: hipchatKey
+      recipients: 
+        - '#rc-public'
+        - '#rc-privtae'
+        - '@shiptest.rc.ow'
+      on_start: always
+      on_success: always   
+      on_failure: never
     #  on_cancel: always
 
 
