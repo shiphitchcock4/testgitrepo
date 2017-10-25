@@ -39,7 +39,7 @@ resources:
     type: cluster
     integration: ship-ddc
     pointer:
-      sourceName : "nothing"
+      sourceName: "nothing"
     flags: ddc_cluster
     
   - name: ddc_dopts
