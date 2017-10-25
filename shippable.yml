@@ -53,9 +53,9 @@ integrations:
     - integrationName: ship-hipchateditedoldhipchat
       type: hipchat
       recipients: 
-        - '#rc-private'
-        - '#rc-public'
-        - '@shiptestrcow'
+        - '#ship4room'
+        - '#privateroom'
+        - '@shiphitchcock4'
       on_start: always
       on_success: always   
       on_failure: change
