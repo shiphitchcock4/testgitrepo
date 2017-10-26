@@ -67,7 +67,7 @@ integrations:
       
    
     - integrationName: newslack
-      type: slack
+      type: slackKey
       recipients:
         - "#random" 
         - "#rc-public" 
