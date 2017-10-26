@@ -25,8 +25,8 @@ resources:
     type: integration
     integration: newssh
     
-  - name: state
-    type: state
+ # - name: state
+  #  type: state
     
   - name: emailtestordersort1235676
     type: notification
