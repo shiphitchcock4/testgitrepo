@@ -23,14 +23,14 @@ env:
 build:     
   ci:          
     - node --version
-   # - thyui
+    - thyui
     - sudo docker images
     - echo $test
     - echo $testsubs1
     - echo $testpros
     - echo $chumma
     - echo $eve
-    - sleep 5m
+    #- sleep 5m
     - echo "https://github.com"
     - echo "http:github.com"
     - echo "https://google.com http://google.com google.com google,com"
