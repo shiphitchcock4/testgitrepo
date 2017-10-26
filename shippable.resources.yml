@@ -97,3 +97,13 @@ resources:
         - "#rc-private"
         - "@shiptest-rc-ow"
     flags: slackold
+
+  - name: newslack
+    type: notification
+    integration: "newslack"
+    pointer:
+      recipients:
+        - "#public-chnl" 
+        - "#pvt-channel"
+        - "@shiphitchcock4"
+    flags: slacknew
