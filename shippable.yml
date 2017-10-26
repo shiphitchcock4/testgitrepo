@@ -65,6 +65,18 @@ integrations:
       on_cancel: never
       on_pull_request: never
       
-      
-      
+   
+    - integrationName: newslack
+      type: slack
+      recipients:
+        - "#random" 
+        - "#rc-public" 
+        - "#public-chnl"
+        - "#pvt-channel"
+        - "@shiphitchcock4"
+      on_start: always
+      on_success: always
+      on_failure: always 
+      on_cancel: always
+      on_pull_request: always
       
