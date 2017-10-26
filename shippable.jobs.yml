@@ -17,7 +17,7 @@ jobs:
       
       #- IN: yyyryt
       - TASK:
-         - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
+         - script: ./IN/sampletestRepo1editedited/gitRepo/echo.sh
          - script: echo 'api'
          - script: printenv
          #- script: echo 'test'
@@ -70,10 +70,11 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      
     allowPublicAccess: true
     steps:
       - IN: new-image123
-    #    versionNumber: 012345678901234567890
+        versionNumber: 01234
      # - IN: t111
      
     on_success:      
