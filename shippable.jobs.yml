@@ -7,6 +7,7 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     allowPublicAccess: true
     steps:
       - IN: sampletestRepo1edit
@@ -43,6 +44,7 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     on_failure:
       - script: echo 'testing1 failure'      
       - script: pwd
@@ -52,6 +54,7 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     on_cancel:
       - script: echo "This works on_always"
       - NOTIFY: newemail
@@ -59,6 +62,7 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     flags: www3454
          
   - name: testdup2mani
@@ -70,6 +74,7 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
       
     allowPublicAccess: true
     steps:
@@ -87,6 +92,7 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     on_failure:
       - script: echo 'testing1 failure'      
       - script: pwd
@@ -96,12 +102,14 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     on_cancel:
       - script: echo "This works on_always"
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
       - NOTIFY: notify-hipchat
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     #  - NOTIFY: hipchatnew
     flags: weee345
      
@@ -170,6 +178,7 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     steps:      
       - IN: testdup2mani
       - IN: ddc_dopts
@@ -184,13 +193,14 @@ jobs:
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
+      - NOTIFY: newslack
     on_failure:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
-     
+      - NOTIFY: newslack
 
 
 
