@@ -49,10 +49,6 @@ build:
 
 integrations:    
   notifications:
-
-  
-       
-
     - integrationName: newslack
       type: slack
       recipients:
