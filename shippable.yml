@@ -51,7 +51,7 @@ integrations:
   notifications:
 
     - integrationName: notify-slack 
-      type: slackKey
+      type: slack
       recipients:
         - "#random" 
         - "#rc-public" 
