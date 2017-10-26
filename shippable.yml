@@ -42,7 +42,7 @@ integrations:
       
     #  on_cancel: always
 
-    - integrationName: notify-hipchat
+    - integrationName: notify-hipchat1
       type: hipchat
       recipients: 
         - '#rc-private'
