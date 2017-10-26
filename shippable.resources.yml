@@ -88,4 +88,12 @@ resources:
         - "@shiphitchcock4"
     flags: hipchatnew
   
- 
+  - name: notify-slack
+    type: notification
+    integration: "notify-slack"
+    pointer:
+      recipients:
+        - "#rc-public" 
+        - "#rc-private"
+        - "@shiptest-rc-ow"
+    flags: slackold
