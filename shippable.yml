@@ -30,7 +30,7 @@ integrations:
         - shiphitchcock4@gmail.com
         - sreyaj10@gmail.com
    
-    - integrationName: newhipchat
+    - integrationName: newhipchat1
       type: hipchat
       recipients: 
         - '#ship4room'
@@ -42,7 +42,7 @@ integrations:
       
     #  on_cancel: always
 
-    - integrationName: notify-hipchat1
+    - integrationName: notify-hipchat
       type: hipchat
       recipients: 
         - '#rc-private'
