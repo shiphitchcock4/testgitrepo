@@ -71,7 +71,16 @@ integrations:
       on_failure: always
       on_cancel: always
 
-
+    - integrationName: notify-slack 
+      type: slack
+      recipients:
+        - "#random" 
+        - "#rc-public" 
+        - "#rc-private"
+      on_start: always
+      on_success: always
+      on_failure: always 
+      on_cancel: always
 
 
 
