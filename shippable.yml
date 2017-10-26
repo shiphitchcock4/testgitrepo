@@ -50,7 +50,18 @@ build:
 integrations:    
   notifications:
 
-    - integrationName: notify-slack 
+  #  - integrationName: notify-slack 
+   #   type: slack
+   #   recipients:
+   #     - "#random" 
+   #     - "#rc-public" 
+   #     - "#rc-private"
+   #   on_start: always
+   #   on_success: always
+   #   on_failure: always 
+   #   on_cancel: never
+   
+    - integrationName: ship-slackoldedited
       type: slack
       recipients:
         - "#random" 
@@ -60,4 +71,4 @@ integrations:
       on_success: always
       on_failure: always 
       on_cancel: never
-
+   
