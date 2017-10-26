@@ -156,8 +156,7 @@ jobs:
          
   - name: deploy_ddc
     type: deploy    
-    on_start:
-    
+    on_start:    
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
       - NOTIFY: notify-hipchat
@@ -170,8 +169,7 @@ jobs:
       #- IN: t2runsh
       - TASK: managed
     flags: deploy_ddc
-    on_success:         
-   
+    on_success:    
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676 
       - NOTIFY: notify-hipchat
