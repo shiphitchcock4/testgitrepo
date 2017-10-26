@@ -18,7 +18,7 @@ jobs:
       
       #- IN: yyyryt
       - TASK:
-         - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
+         - script: ./IN/sampletestRepo1edit1/gitRepo/echo.sh
          - script: echo 'api'
          - script: printenv
          #- script: echo 'test'
@@ -65,27 +65,25 @@ jobs:
       - NOTIFY: newslack
     flags: www3454
          
+         
+         
   - name: testdup2mani
     type: manifest
-    
     on_start:
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
       - NOTIFY: notify-hipchat
       - NOTIFY: hipchatnew
       - NOTIFY: notify-slack
-      - NOTIFY: newslack
-      
+      - NOTIFY: newslack 
     allowPublicAccess: true
     steps:
       - IN: new-image123
-       # versionNumber: 01234
-     # - IN: t111
-     
+        versionNumber: 01234
+     # - IN: t111     
     on_success:      
       - script: echo 'test in on_success'
       - script: ls
-
       - script: echo 'it is success'
       - NOTIFY: newemail
       - NOTIFY: emailtestordersort1235676
@@ -113,6 +111,7 @@ jobs:
     #  - NOTIFY: hipchatnew
     flags: weee345
      
+     
   - name: runShitnoaccess
     type: runSh
  #   allowPublicAccess: true
@@ -130,6 +129,9 @@ jobs:
       - NOTIFY: newemail
       - NOTIFY: notify-hipchat
     #  - NOTIFY: notify-irc
+    
+    
+    
   - name: runcliaccess
     type: runCLI
    # allowPublicAccess: true
@@ -142,7 +144,9 @@ jobs:
          - script: echo 'api'
          - script: echo 'test'
       - OUT: state
-         #- script: pwd   
+         #- script: pwd  
+         
+         
          
   - name: runcliaccess12345
     type: runCLI
@@ -155,6 +159,9 @@ jobs:
          - script: echo 'api'
          #- script: echo 'test'
          #- script: pwd     
+
+
+
 
   - name: nodependecy
     type: runCLI
