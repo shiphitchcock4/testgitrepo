@@ -18,7 +18,7 @@ jobs:
       
       #- IN: yyyryt
       - TASK:
-         - script: ./IN/sampletestRepo1edit1/gitRepo/echo.sh
+         - script: ./IN/sampletestRepo1edit/gitRepo/echo.sh
          - script: echo 'api'
          - script: printenv
          #- script: echo 'test'
@@ -79,7 +79,7 @@ jobs:
     allowPublicAccess: true
     steps:
       - IN: new-image123
-        versionNumber: 01234
+       # versionNumber: 01234
      # - IN: t111     
     on_success:      
       - script: echo 'test in on_success'
