@@ -3,14 +3,80 @@ language: node_js
 # Version number
 node_js:
   - 0.10
-  - 0.12
+  #- 0.12
   #- 4.2.3
   #- iojs-v1   
   #- iojs-v2
   #- iojs-v3   
   #- 5.0          
- 
 build:     
   ci:          
     - node --version
-   # - sleep 5m
+    - echo $the123
+  #  - echo $thispr1123
+   # - sleep 6m
+integrations:    
+  notifications:
+
+    - integrationName: email   
+    #- integrationName: test    
+      type: email   
+      on_start: always
+      on_success: always
+      on_cancel: never
+      on_failure: always
+      on_pull_request: always
+      recipients:  
+        - shiphitchcock4@gmail.com
+        - sreyaj10@gmail.com
+   
+    - integrationName: newhipchat1
+      type: hipchat
+      recipients: 
+        - '#ship4room'
+        - '#privateroom'
+        - '@shiphitchcock4'
+      on_start: always
+      on_success: always 
+      on_pull_request: always
+      
+    #  on_cancel: always
+
+    - integrationName: notify-hipchat
+      type: hipchat
+      recipients: 
+        - '#rc-private'
+        - '#rc-public'
+        - '@shiptestrcow'
+      on_start: always
+      on_success: always   
+      on_failure: always
+      on_cancel: always
+   
+    - integrationName: notify-slack 
+      type: slack
+      recipients:
+        - "#random" 
+        - "#rc-public" 
+        - "#rc-private"
+      on_start: always
+      on_success: always
+      on_failure: always 
+      on_cancel: never
+      on_pull_request: never
+      
+   
+    - integrationName: newslack
+      type: slackKey
+      recipients:
+        - "#random" 
+        - "#rc-public" 
+        - "#public-chnl"
+        - "#pvt-channel"
+        - "@shiphitchcock4"
+      on_start: always
+      on_success: always
+      on_failure: always 
+      on_cancel: always
+      on_pull_request: always
+      
