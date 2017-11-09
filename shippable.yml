@@ -20,7 +20,8 @@ env:
    # - secure: xYI8SnGXSgVI+iqRXyFyKozKuvg/Ss8Uo1VOn1te+cfN2i5UKxNdEYof6MKM5Vcp0LS+woh6lXF6UcWfMYlTxRVBWmtnDQXONU9afI76NJtejJD/TFLYOYY5Kh2WzKpax859rMUP26rPrii4MQzxJD72RFXMG2vbsQBVi/ybv75PGSv68jUGIe+CBBUnWC/7ve95wcFqfhTf1J4keGjgdzI2HI28tncOJZpX+o5HLdTeYyNw5HRo3CJa1OOe3hsqFtXK/bLMEZJdb8InzPjMLoHgUW7xL1PbpChreIa3k6jrxxjgbrh+IEKq0kLVFznpxztjfIo3OiIB5NhdQ2mo+A==
    # - secure: b7vbK4/ZaUdXLmcTWE+CL8jG9qq6lpf/MkDQINZKwFQVJDOE4+qLT8MmQo+vVXcc9Vm9YguPG/1eUhhajxpewoMVNFs69ywbuW3ZrFvM/lkTv6Xpn48u9FoRpML9MOjm7LUvrpFsrV2E9skcL1QxBuS5x0L9lGGCdvuKnh127F69nGVXuEUFQ3qGyxdi/g182utuEzNuYHAfHrAkkKFelyc/QtkDNYjou0qatg0rxnAXRhPlmnItOryIrEQhGD2KGzmcERjQ7khgPh844t+T6eUv7xk8YKIlG3JuDhovJoT4qF45bcWvNN4iecodGuXmhxnlHez3iu3Zz04QV+ga8A==
    # - secure: V1BWMMqrjt5aDqmdWjEGTDMvVlxuE7yEv0/H9ret9W9OA5VMWm2dFOStHK9TMZrP5eN9GmzcfI86JEzDaU2mEKf6q6Nas5ZJU6nJxeq33Ph8g/YNManAIIM8pYh3KSOKsU5aJCmtPapI7iamegNnfJi1J3U+XYltgwrrkwGglY6hgf0YCOro0sbeHfzF7L+1LKPFVPAqdivYeeKZNoLUAbAeuEkaxqa6LKOg2VzYMBASM2EP8n1NANnHn8RFGBcvDSJkRdQIuQLEwU9FIV1s4ZON8eT49E0YNEevJe+R6wmybTcvW+8xtutxOktFEjs1ckmYvOUQD8jgAiNHERsbgw==
-submodule: false
+git: 
+  submodule: false
 build:     
   ci:          
     - node --version
